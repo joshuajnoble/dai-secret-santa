@@ -21,9 +21,9 @@ else:
     for pair in gifting_list:
         if(pair['sender'] == st.user.email):
             st.html(f"You're giving to: <p><span style='color: orange; font-weight: bold;'>{pair['reciever'][0]}</span></p>")
-            st.html(f"Their mailing address is {pair['reciever'][1]}</span></p>")
+            st.html(f"Their mailing address is: <p><span style='color: orange; font-weight: bold;'>{pair['reciever'][1]}</span></p>")
             if(pair['reciever'][2] != ""):
-                st.html(f"Their preferred bookseller is {pair['reciever'][2]}</span></p>")
+                st.html(f"Their preferred bookseller is <p><span style='color: orange; font-weight: bold;'>{pair['reciever'][2]}</span></p>")
 
     if st.button("Log out", type="secondary", icon=":material/logout:"):
         st.logout()
